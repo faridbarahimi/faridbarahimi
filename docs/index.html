@@ -98,20 +98,20 @@
         <div class="live-title">AICP LIVE OVERVIEW</div>
         <div class="live-stats">
           <div class="stat">
-            <div class="stat-val">12</div>
-            <div class="stat-label"><span class="dot green"></span> Workers Active</div>
+            <div class="stat-val">—</div>
+            <div class="stat-label"><span class="dot green"></span> Workers Active <small>private</small></div>
           </div>
           <div class="stat">
-            <div class="stat-val">48</div>
-            <div class="stat-label"><span class="dot blue"></span> Tasks Running</div>
+            <div class="stat-val">—</div>
+            <div class="stat-label"><span class="dot blue"></span> Tasks Running <small>private</small></div>
           </div>
           <div class="stat">
-            <div class="stat-val">36</div>
-            <div class="stat-label"><span class="dot green"></span> Evidence Verified</div>
+            <div class="stat-val">—</div>
+            <div class="stat-label"><span class="dot green"></span> Evidence Verified <small>private</small></div>
           </div>
           <div class="stat">
-            <div class="stat-val">8</div>
-            <div class="stat-label"><span class="dot cyan"></span> Models Online</div>
+            <div class="stat-val">—</div>
+            <div class="stat-label"><span class="dot cyan"></span> Models Online <small>not exposed</small></div>
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@
     <!-- What is AICP -->
     <section class="card what-is">
       <h2><span class="icon">💡</span> What is AICP?</h2>
-      <p>AICP is an open-source platform for orchestrating AI workers, models and tools with governance, traceability and cost control — designed for real work, not just conversations.</p>
+      <p>AICP is a work-orchestration and execution control-plane foundation for AI workers, models and tools, with governance, traceability, cost control and recoverable task state — designed for real work, not just conversations.</p>
       <div class="feature-grid">
         <div class="feat"><span>🔀</span> Multi-Model Support</div>
         <div class="feat"><span>💰</span> Cost-Aware Routing</div>
@@ -206,24 +206,16 @@
 
     <!-- Engineering Telemetry -->
     <section class="card telemetry">
-      <h2><span class="icon">📡</span> Engineering Telemetry <span class="live-badge">● Live from GitHub</span></h2>
+      <h2><span class="icon">📡</span> Public GitHub Telemetry <span class="live-badge">● API</span></h2>
       <div class="tele-grid">
-        <div class="tele-item"><div class="t-val">12</div><div class="t-label">Repositories</div></div>
-        <div class="tele-item"><div class="t-val green">Live</div><div class="t-label">Contributions</div></div>
-        <div class="tele-item"><div class="t-val green">Live</div><div class="t-label">Commits</div></div>
-        <div class="tele-item"><div class="t-val">Live</div><div class="t-label">Pull Requests</div></div>
-        <div class="tele-item"><div class="t-val">Live</div><div class="t-label">Issues</div></div>
-        <div class="tele-item"><div class="t-val">8</div><div class="t-label">Languages</div></div>
+        <div class="tele-item"><div class="t-val" id="ghRepos">—</div><div class="t-label">Public repositories</div></div>
+        <div class="tele-item"><div class="t-val green" id="ghFollowers">—</div><div class="t-label">GitHub followers</div></div>
+        <div class="tele-item"><div class="t-val green">API</div><div class="t-label">Source: GitHub</div></div>
+        <div class="tele-item"><div class="t-val">Public</div><div class="t-label">Visibility scope</div></div>
+        <div class="tele-item"><div class="t-val">API</div><div class="t-label">Fetched on demand</div></div>
+        <div class="tele-item"><div class="t-val">—</div><div class="t-label">Languages <small>repo-specific</small></div></div>
       </div>
-      <div class="langs">
-        <div class="lang-bar">
-          <div class="lang-item" style="--pct:38.2%;--c:#3776ab"><span>Python</span> 38.2%</div>
-          <div class="lang-item" style="--pct:24.7%;--c:#3178c6"><span>TypeScript</span> 24.7%</div>
-          <div class="lang-item" style="--pct:15.3%;--c:#f7df1e"><span>JavaScript</span> 15.3%</div>
-          <div class="lang-item" style="--pct:8.6%;--c:#00add8"><span>Go</span> 8.6%</div>
-          <div class="lang-item" style="--pct:13.2%;--c:#8b5cf6"><span>Other</span> 13.2%</div>
-        </div>
-      </div>
+      <div class="tele-note">Language distribution is intentionally omitted here until it is fetched from a specific public repository. The page never treats illustrative percentages as live telemetry.</div>
     </section>
 
     <!-- Execution Pipeline -->
@@ -310,12 +302,12 @@
     <!-- Architecture Status -->
     <section class="card status">
       <h2><span class="icon">📊</span> AICP Architecture Status</h2>
-      <div class="status-bars">
-        <div class="s-row"><span>Governance</span><div class="bar"><div style="width:100%"></div></div><span>100%</span><span class="s-tag active">Active</span></div>
-        <div class="s-row"><span>Execution</span><div class="bar"><div style="width:85%"></div></div><span>85%</span><span class="s-tag active">Active</span></div>
-        <div class="s-row"><span>Evidence</span><div class="bar"><div style="width:70%"></div></div><span>70%</span><span class="s-tag active">Active</span></div>
-        <div class="s-row"><span>Recovery</span><div class="bar"><div style="width:45%"></div></div><span>45%</span><span class="s-tag design">Design</span></div>
-        <div class="s-row"><span>Multi-Agent</span><div class="bar"><div style="width:30%"></div></div><span>30%</span><span class="s-tag design">Design</span></div>
+      <div class="status-bars status-signals">
+        <div class="s-row"><span>Governance</span><div class="bar signal"><div></div></div><span class="s-tag">Documented</span></div>
+        <div class="s-row"><span>Execution</span><div class="bar signal"><div></div></div><span class="s-tag">Foundation</span></div>
+        <div class="s-row"><span>Evidence</span><div class="bar signal"><div></div></div><span class="s-tag">Foundation</span></div>
+        <div class="s-row"><span>Recovery</span><div class="bar signal"><div></div></div><span class="s-tag">Design / workstream</span></div>
+        <div class="s-row"><span>Multi-Agent</span><div class="bar signal"><div></div></div><span class="s-tag">Design / workstream</span></div>
       </div>
     </section>
 
@@ -330,10 +322,61 @@
       </div>
     </section>
 
+    <!-- Interactive Workbench -->
+    <section class="card workbench">
+      <h2><span class="icon">🧪</span> Interactive Workbench <span class="badge">Architecture Model</span></h2>
+      <div class="workbench-grid">
+        <div class="wb-control">
+          <label>Task complexity <output id="wbComplexity">45%</output></label>
+          <input id="wbComplexityRange" type="range" min="0" max="100" value="45">
+          <label>Cost sensitivity <output id="wbCost">60%</output></label>
+          <input id="wbCostRange" type="range" min="0" max="100" value="60">
+          <button class="btn wb-run" id="wbRun">Run routing simulation</button>
+          <p class="wb-note">Illustrative routing model. It does not represent current provider prices or production traffic.</p>
+        </div>
+        <div class="wb-visual">
+          <div class="wb-route r-free">FREE / CHEAP</div><div class="wb-route r-special">SPECIALIST</div><div class="wb-route r-escalate">ESCALATION</div>
+          <div class="wb-path" id="wbPath"></div><div class="wb-status" id="wbStatus">Ready</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analytical Decision Model -->
+    <section class="card analytics-model">
+      <h2><span class="icon">📈</span> Decision Signals <span class="badge">Illustrative model</span></h2>
+      <p class="model-intro">These visualizations explain control-plane reasoning. Values are normalized examples, not production measurements.</p>
+      <div class="analytics-grid">
+        <div class="chart-wrap"><h3>Task complexity → routing pressure</h3><svg viewBox="0 0 640 260" class="analytic-svg" aria-label="Illustrative task complexity chart"><line x1="48" y1="215" x2="620" y2="215"/><line x1="48" y1="25" x2="48" y2="215"/><polyline points="55,190 135,174 215,158 295,132 375,115 455,82 535,55 615,35"/><circle cx="55" cy="190" r="4"/><circle cx="215" cy="158" r="4"/><circle cx="375" cy="115" r="4"/><circle cx="535" cy="55" r="4"/><circle cx="615" cy="35" r="4"/><text x="50" y="238">simple</text><text x="545" y="238">complex</text></svg></div>
+        <div class="chart-wrap"><h3>Assurance layers</h3><div class="assurance-bars"><div><span>Policy boundary</span><i style="--v:92%"></i></div><div><span>Task isolation</span><i style="--v:78%"></i></div><div><span>Evidence capture</span><i style="--v:86%"></i></div><div><span>Independent verification</span><i style="--v:72%"></i></div><div><span>Recovery continuity</span><i style="--v:58%"></i></div></div><small class="chart-foot">Conceptual normalized values used only to explain the architecture.</small></div>
+      </div>
+    </section>
+
+
+    <!-- VPS Chat Gateway -->
+    <section class="card chat-card" id="aicpChat">
+      <div class="chat-head">
+        <div>
+          <h2><span class="icon">💬</span> AICP Live Chat <span class="badge">VPS Gateway</span></h2>
+          <p class="chat-intro">A public chat surface that sends messages to a controlled VPS gateway, which can route the request to a configured Gemini API model. The browser never receives the Gemini key.</p>
+        </div>
+        <div class="chat-connection"><span id="chatDot" class="dot amber"></span><span id="chatState">Gateway not checked</span></div>
+      </div>
+      <div class="chat-layout">
+        <div class="chat-messages" id="chatMessages" aria-live="polite">
+          <div class="chat-msg system"><span class="msg-role">AICP</span><p>Ready. Connect this public interface to the VPS gateway to start a Gemini conversation.</p></div>
+        </div>
+        <form class="chat-compose" id="chatForm">
+          <textarea id="chatInput" rows="2" maxlength="4000" placeholder="Ask AICP something…" aria-label="Chat message"></textarea>
+          <div class="chat-actions"><span>VPS → Gemini · key stays server-side</span><button class="btn" type="submit" id="chatSend">Send →</button></div>
+        </form>
+      </div>
+      <details class="chat-config"><summary>Connection status</summary><p id="chatEndpointLabel">Gateway endpoint: not configured in this public build.</p><p class="chat-security">Security boundary: GitHub Pages → HTTPS VPS gateway → Gemini API. No API key is embedded in HTML or JavaScript.</p></details>
+    </section>
+
     <!-- CTA -->
     <section class="card cta">
       <h2>Let’s Build The Future of AI Work</h2>
-      <p>Open Source · Collaborative · Reliable</p>
+      <p>Public showcase · Interactive architecture · Evidence-oriented engineering</p>
       <a class="btn" href="https://github.com/faridbarahimi/faridbarahimi" target="_blank" rel="noopener">
         Follow AICP on GitHub →
       </a>
@@ -349,13 +392,59 @@
   </footer>
 
   <script>
-    // subtle live feel
-    document.querySelectorAll('.stat-val, .t-val').forEach(el => {
-      el.style.transition = 'text-shadow 0.8s ease';
-      setInterval(() => {
-        el.style.textShadow = Math.random() > 0.5 ? '0 0 12px currentColor' : 'none';
-      }, 2200 + Math.random() * 1500);
+  (() => {
+    const $=id=>document.getElementById(id);
+    // Remove fake telemetry glow; this page only animates actual UI state.
+    document.querySelectorAll('.stat-val,.t-val').forEach(el=>el.style.transition='text-shadow .4s ease');
+
+    // Pipeline: click steps to reveal state and animate the execution path.
+    document.querySelectorAll('.pipe-step').forEach((el,i)=>el.addEventListener('click',()=>{
+      document.querySelectorAll('.pipe-step').forEach(x=>x.classList.remove('active')); el.classList.add('active');
+      document.querySelector('.pipeline').dataset.active=i+1;
+    }));
+
+    // Worker network: periodic, deterministic active-node pulse.
+    const nodes=[...document.querySelectorAll('.n-node')]; let ni=0;
+    setInterval(()=>{nodes.forEach(n=>n.classList.remove('network-active'));nodes[ni++%nodes.length]?.classList.add('network-active')},1100);
+
+    // Cost-aware routing model.
+    const c=$('wbComplexityRange'), k=$('wbCostRange');
+    function route(){
+      const cv=+c.value,kv=+k.value; $('wbComplexity').value=cv+'%'; $('wbCost').value=kv+'%';
+      $('wbComplexity').textContent=cv+'%'; $('wbCost').textContent=kv+'%';
+      let label='FREE / CHEAP', cls='r-free';
+      if(cv>=70) {label=kv>=45?'ESCALATION':'SPECIALIST'; cls=kv>=45?'r-escalate':'r-special'}
+      else if(cv>=40 && kv<40) {label='SPECIALIST';cls='r-special'}
+      document.querySelectorAll('.wb-route').forEach(x=>x.classList.remove('selected')); document.querySelector('.'+cls).classList.add('selected');
+      $('wbStatus').textContent='Route: '+label+' · complexity '+cv+'% · cost sensitivity '+kv+'%';
+    }
+    c.addEventListener('input',route);k.addEventListener('input',route);$('wbRun').addEventListener('click',()=>{const p=$('wbPath');p.classList.remove('animate');void p.offsetWidth;p.classList.add('animate');route()});route();
+
+    // Scroll reveal.
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});
+    document.querySelectorAll('.card,.hero,.quote').forEach(x=>io.observe(x));
+
+    // Public GitHub telemetry only; no fabricated fallback.
+    fetch('https://api.github.com/users/faridbarahimi').then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(d=>{
+      if($('ghRepos'))$('ghRepos').textContent=d.public_repos??'—'; if($('ghFollowers'))$('ghFollowers').textContent=d.followers??'—';
+    }).catch(()=>{});
+
+    // VPS chat gateway. The public page never stores or sends the Gemini API key.
+    const chatEndpoint=window.AICP_CHAT_ENDPOINT||'';
+    const chatHistory=[];
+    const chatForm=$('chatForm'), chatInput=$('chatInput'), chatMessages=$('chatMessages'), chatState=$('chatState'), chatDot=$('chatDot'), chatSend=$('chatSend');
+    function addChat(role,text){const box=document.createElement('div');box.className='chat-msg '+role;box.innerHTML='<span class="msg-role">'+(role==='user'?'YOU':'AICP')+'</span><p></p>';box.querySelector('p').textContent=text;chatMessages.appendChild(box);chatMessages.scrollTop=chatMessages.scrollHeight;}
+    function setChatState(label,kind){chatState.textContent=label;chatDot.className='dot '+kind;}
+    if(chatEndpoint){$('chatEndpointLabel').textContent='Gateway endpoint: '+chatEndpoint;setChatState('Gateway configured','green')}else{setChatState('Gateway not configured','amber')}
+    chatForm?.addEventListener('submit',async e=>{e.preventDefault();const message=chatInput.value.trim();if(!message)return;addChat('user',message);chatHistory.push({role:'user',text:message});chatInput.value='';chatSend.disabled=true;setChatState('Sending…','blue');
+      if(!chatEndpoint){addChat('system','The VPS gateway is not connected to this public build yet. The UI is ready, but no browser-to-VPS request is made without an HTTPS gateway endpoint.');setChatState('Gateway not configured','amber');chatSend.disabled=false;return;}
+      try{const res=await fetch(chatEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:chatHistory.slice(-12)})});const data=await res.json().catch(()=>({}));if(!res.ok)throw Error(data.error||('HTTP '+res.status));const reply=data.reply||'No response returned.';addChat('assistant',reply);chatHistory.push({role:'assistant',text:reply});setChatState('Gemini connected','green')}catch(err){addChat('system','Gateway error: '+err.message);setChatState('Gateway error','red')}finally{chatSend.disabled=false;}
     });
+
+    // Small public clock, not telemetry.
+    const clock=document.createElement('span');clock.className='public-clock';document.querySelector('.header')?.appendChild(clock);
+    setInterval(()=>clock.textContent='PUBLIC VIEW · '+new Date().toLocaleTimeString([], {hour12:false}),1000);
+  })();
   </script>
 </body>
 </html>
