@@ -1,6 +1,1 @@
-{
-  "name": "AICP",
-  "status": "building",
-  "focus": ["AI Workers","Work Orchestration","Governance","Evidence","Cost-Aware Routing"],
-  "last_updated": "2026-09-25"
-}
+{"profile":"faridbarahimi","project":"AICP","design":"AICP Visual Control Center","metrics_policy":"No fabricated live metrics","engineering_repository":"https://github.com/faridbarahimi/AICP-Core-Platform"}

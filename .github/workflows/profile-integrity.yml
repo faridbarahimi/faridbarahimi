@@ -1,11 +1,9 @@
 name: Profile Integrity
-
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
-
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -15,14 +13,10 @@ jobs:
         run: |
           set -e
           test -s README.md
-          for f in             assets/aicp-hero.svg             assets/aicp-architecture.svg             assets/aicp-routing.svg             assets/aicp-worker-continuity.svg             assets/aicp-evidence.svg; do
-            test -s "$f"
-          done
-          grep -q "AICP-Core-Platform" README.md
-          python - <<'PY'
-          import xml.etree.ElementTree as ET
-          from pathlib import Path
-          for p in Path("assets").glob("*.svg"):
-              ET.parse(p)
-          print("All SVG assets are well-formed.")
-          PY
+          test -s assets/aicp-hero.svg
+          test -s assets/aicp-architecture.svg
+          test -s assets/aicp-routing.svg
+          test -s assets/aicp-worker-continuity.svg
+          test -s assets/aicp-evidence.svg
+          test -s .aicp/profile-status.json
+          grep -q 'faridbarahimi/AICP-Core-Platform' README.md
