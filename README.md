@@ -1,161 +1,186 @@
 <div align="center">
 
-<img src="./assets/aicp-hero.svg" alt="AICP — AI Collaboration & Intelligence Platform" width="100%"/>
+<img src="./assets/aicp-hero.svg" width="100%" alt="AICP — AI Collaboration & Intelligence Platform"/>
 
-# Farid Barahimi
+# AICP — AI Collaboration & Intelligence Platform
 
 ### Building the control plane for AI workers.
 
-**AICP · AI Collaboration & Intelligence Platform**  
-*Human intent → governed work → coordinated AI workers → evidence → verified outcome.*
+**Plan · Execute · Verify · Recover**
 
-[![AICP](https://img.shields.io/badge/AICP-AI%20Worker%20Control%20Plane-111827?style=for-the-badge)](https://github.com/faridbarahimi/AICP-Core-Platform)
-[![Architecture](https://img.shields.io/badge/Architecture-Governed%20Execution-172554?style=for-the-badge)](https://github.com/faridbarahimi/AICP-Core-Platform)
-[![Focus](https://img.shields.io/badge/Focus-AI%20Systems%20Engineering-0f172a?style=for-the-badge)](https://github.com/faridbarahimi)
+[![AICP](https://img.shields.io/badge/AICP-AI%20Worker%20Control%20Plane-6366f1?style=for-the-badge)](https://github.com/faridbarahimi)
+[![AI Workers](https://img.shields.io/badge/AI-Workers-06b6d4?style=for-the-badge)](https://github.com/faridbarahimi)
+[![Automation](https://img.shields.io/badge/Automation-Engineering-8b5cf6?style=for-the-badge)](https://github.com/faridbarahimi)
 
 </div>
 
 ---
 
-## ◈ AICP — The Idea
+## 🧠 The Idea
 
-AICP is being designed as a **work orchestration and control plane for AI workers**.
+**AI should not only answer. AI should work.**
 
-It is not simply an LLM wrapper or a prompt router.
+AICP is being built as a governed work-orchestration and execution control plane for AI workers: systems that can understand a goal, plan bounded work, use tools, produce evidence, verify outcomes, recover from interruption, and continue.
 
-The goal is a governed execution layer where human intent becomes durable, verifiable work across heterogeneous AI workers, models, tools, machines and external services.
-
-<div align="center"><img src="./assets/aicp-architecture.svg" alt="AICP architecture" width="100%"/></div>
-### The operating principle
-
-> **AICP does not merely answer. It governs work.**
-
-A worker may stop. A provider may fail. A model may become unavailable. A machine may disconnect.
-
-The task should remain a durable object that can be inspected, resumed, rerouted, verified and — when authorized — completed.
+<div align="center">
+<img src="./assets/aicp-architecture.svg" width="96%" alt="AICP architecture"/>
+</div>
 
 ---
 
-## ◈ Cost-Aware Execution
+## ⚡ What AICP Connects
 
-<div align="center"><img src="./assets/aicp-routing.svg" alt="AICP cost-aware routing" width="100%"/></div>
-
-AICP uses **capability-aware and cost-aware routing** rather than a single default model.
-
-The objective is to use **sufficient capability with controlled risk and cost**.
-
-**Routing concept:** Free / Low Cost → Specialist / KAT → Claude Code or another specialist when escalation is genuinely required.
-
----
-
-## ◈ Worker Continuity
-
-<div align="center"><img src="./assets/aicp-worker-continuity.svg" alt="AICP worker continuity" width="100%"/></div>
-### A fundamental invariant
-
-**<code>WORKER STOPPED ≠ TASK STOPPED</code>**
-
-AICP separates task state from execution resources, artifacts and evidence.
-
-That enables:
-
-- resumable execution
-- worker/provider replacement
-- checkpoint-based continuation
-- isolated task transactions
-- independent verification
-- controlled publication
-- recovery after interruption
-
----
-
-## ◈ Evidence Before Trust
-
-<div align="center"><img src="./assets/aicp-evidence.svg" alt="AICP evidence and verification" width="100%"/></div>
-
-AICP distinguishes:
-
-**OBSERVED → EVIDENCE → VERIFIED → AUTHORIZED → IMPLEMENTED**
-
-And preserves:
-
-**ACCEPTED ≠ AUTHORIZED ≠ IMPLEMENTED**
-
-The engineering goal is simple: important claims should be traceable to evidence, and important outcomes should be independently verifiable.
----
-
-## ◈ Architecture Principles
-
-| Principle | Meaning |
+| Layer | Purpose |
 |---|---|
-| **Human Authority** | Humans retain final authority over consequential decisions. |
-| **Durable Tasks** | Work survives worker/provider interruption. |
-| **Isolation** | Tasks execute within explicit boundaries and controlled workspaces. |
-| **Evidence** | Important claims and outcomes have inspectable proof. |
-| **Verification** | Completion is not assumed because a worker reports success. |
-| **Cost Control** | Routing considers capability, risk and economic fit. |
-| **Provider Agnosticism** | Workers and model providers are replaceable resources. |
-| **No Partial Publication** | Incomplete or unverified work is not silently promoted. |
-| **Governed Machine Access** | Machines and tools are accessed through controlled interfaces. |
-| **Knowledge Continuity** | Project knowledge remains durable, queryable and provenance-aware. |
+| 👤 Human | Goals, decisions and authorization |
+| 🧠 AICP Core | Governance, orchestration, state, evidence and policy |
+| 🤖 AI Workers | Specialized planning, execution, research and review |
+| 🧩 Models | Capability-aware model/provider routing |
+| 🔧 Tools | GitHub, web, desktop, VPS, APIs and files |
+| 🧾 Evidence | Traceable results and independent verification |
 
 ---
 
-## ◈ Current Engineering Areas
+## 🔄 The Execution Model
 
-- AI Worker Orchestration & Control Plane
-- Governed Execution & Human Authorization
-- Task Transactions & Isolated Worktrees
-- Resilience, Recovery & Worker Continuity
-- Provider Capability Discovery & Real Inference Verification
-- Evidence & Execution-Outcome Records
-- Context Budget & Retrieval Management
-- Controlled Machine Access
-- AI/Economic Fit & Automation Compliance Risk
-- Knowledge Continuity & Architecture Governance
-- Multi-Agent Cost Control & Escalation Routing
----
+<div align="center">
+<img src="./assets/aicp-execution.svg" width="96%" alt="AICP execution pipeline"/>
+</div>
 
-## ◈ Project Ecosystem
+~~~text
+INTENT → PLAN → TASK → WORKER → TOOL → RESULT → EVIDENCE → VERIFY
+~~~
 
-### AICP-Core-Platform
+> **Worker STOPPED ≠ Task STOPPED**
 
-The engineering repository for the AICP control-plane implementation, architecture decisions, tests and governed execution infrastructure.
-
-**→ https://github.com/faridbarahimi/AICP-Core-Platform**
-
-### Karen
-
-The broader human-like AI worker vision that can operate across web, desktop, ChatGPT, Claude, Gemini, Grok and other capability providers.
-
-**AICP is the control plane. Karen is the worker-oriented experience built around it.**
+A task should retain state and checkpoints so another worker can continue it without starting from zero.
 
 ---
 
-## ◈ Engineering Loop
+## 💰 Cost-Aware AI Routing
 
-**Human Intent** → **Task Definition** → **Governance / Policy** → **Capability Routing** → **Isolated Execution** → **Checkpoint + Evidence** → **Independent Verification** → **Authorization** → **Publication**
+AICP is designed around capability **and** economics, not model prestige.
+
+<div align="center">
+<img src="./assets/aicp-routing.svg" width="94%" alt="AICP cost-aware routing"/>
+</div>
+
+~~~text
+Task → Capability Analysis → Complexity → Cost Constraint
+                                      │
+                         ┌────────────┼────────────┐
+                         ↓            ↓            ↓
+                      Free/Cheap   Specialist   Escalation
+                         │            │            │
+                         └────────────┴────────────┘
+                                      ↓
+                                 Verification
+~~~
 
 ---
 
-## ◈ Build Philosophy
+## 🛡️ Governance & Evidence
 
-**Small task packets.** Break large work into bounded transactions that can be executed, tested, verified and resumed independently.
+AICP treats important execution claims as something that should be provable.
 
-**Cheap first.** Use free or low-cost capability when it is sufficient.
+~~~text
+PROPOSED → REVIEW → ACCEPTED → AUTHORIZED → IMPLEMENTED → VERIFIED
 
-**Specialist escalation.** Escalate difficult work only when required.
+CLAIM → EVIDENCE → COMMAND → RESULT → VERIFICATION
+~~~
 
-**No silent state changes.** Important changes remain explicit, inspectable and attributable.
-
-**Proof over confidence.** A successful response is not the same thing as a verified outcome.
+This creates a boundary between **what was suggested, what was authorized, what was executed, and what was actually verified**.
 
 ---
+
+## 🤖 AI Worker Ecosystem
+
+<div align="center">
+<img src="./assets/aicp-workers.svg" width="94%" alt="AICP worker network"/>
+</div>
+
+AICP's worker model supports specialized roles, bounded tasks, handoff, checkpoints, independent verification and recovery.
+
+---
+
+## 🚀 Projects
+
+### 🧠 AICP
+**AI Collaboration & Intelligence Platform** — the work orchestration and AI worker control-plane foundation.
+
+### 🤖 Karen
+A broader human-like AI worker vision built around persistent capabilities, tools, continuity and real-world task execution.
+
+### ⚙️ AI Worker Infrastructure
+Reusable primitives for routing, execution, evidence, verification, recovery and controlled machine access.
+
+---
+
+## 🧰 Engineering Focus
+
+AI Agents · Multi-Agent Systems · Work Orchestration · Model Routing · Automation · Governance · Evidence · Verification · Recovery · GitHub · Linux · VPS · Python · TypeScript
+
+---
+
+## 📊 GitHub Activity
 
 <div align="center">
 
-### Building infrastructure for AI that can actually do work.
+<img src="https://github-readme-stats.vercel.app/api?username=faridbarahimi&show_icons=true&include_all_commits=true&hide_border=true&theme=transparent" height="175"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=faridbarahimi&layout=compact&hide_border=true&theme=transparent&langs_count=8" height="175"/>
 
-**AICP — Governed Work. Coordinated Workers. Verifiable Outcomes.**
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=faridbarahimi&theme=transparent&hide_border=true" width="70%"/>
+
+</div>
+
+---
+
+## 🧭 Architecture Principles
+
+- **Evidence over assumptions**
+- **Small changes over risky rewrites**
+- **Human authorization at governance boundaries**
+- **Worker failure must not imply task failure**
+- **Capability reuse over unnecessary rebuilding**
+- **Route work according to capability and cost**
+- **Important operations should be independently verifiable**
+- **Automation should be resumable**
+
+---
+
+## 🔭 Direction
+
+~~~text
+                         HUMAN
+                           │
+                           ▼
+                     ┌───────────┐
+                     │   AICP    │
+                     │  CONTROL  │
+                     │   PLANE   │
+                     └─────┬─────┘
+                           │
+             ┌─────────────┼─────────────┐
+             ▼             ▼             ▼
+          Workers        Models         Tools
+             │             │             │
+             └─────────────┼─────────────┘
+                           ▼
+                    REAL WORLD WORK
+                           │
+                           ▼
+                  EVIDENCE + VERIFY
+                           │
+                           ▼
+                       RECOVER
+~~~
+
+<div align="center">
+
+### Building toward AI that can do useful work — safely, visibly, and continuously.
+
+**AICP · AI Workers · Karen**
 
 </div>
