@@ -141,6 +141,12 @@ Reusable primitives for routing, execution, evidence, verification, recovery and
 
 ---
 
+## 🧰 Tools / Kashkool
+
+A public-safe capability catalog for everyday work: PDF and document processing, image utilities, audio/video conversion and transcription, plus fast browser-local tools. Heavy capabilities are designed around governed execution, quota and evidence rather than hidden automation.
+
+**[Open Tools / Kashkool →](./tools/)**
+
 ## 🧰 Engineering Focus
 
 AI Agents · Multi-Agent Systems · Work Orchestration · Model Routing · Automation · Governance · Evidence · Verification · Recovery · GitHub · Linux · VPS · Python · TypeScript
@@ -221,6 +227,6 @@ AI Agents · Multi-Agent Systems · Work Orchestration · Model Routing · Autom
 
 <br/>
 
-[🌐 Live Dashboard](https://faridbarahimi.github.io/faridbarahimi/) · [⭐ Star on GitHub](https://github.com/faridbarahimi/faridbarahimi)
+[🌐 Live Dashboard](https://faridbarahimi.github.io/faridbarahimi/) · [🧰 Tools / Kashkool](./tools/) · [📚 Public Docs](./docs/) · [⭐ Star on GitHub](https://github.com/faridbarahimi/faridbarahimi)
 
 </div>
