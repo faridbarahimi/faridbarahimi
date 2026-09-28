@@ -1,3 +1,7 @@
 # Generated profile artifacts
 .DS_Store
 *.tmp
+
+# Python test cache
+__pycache__/
+*.pyc
