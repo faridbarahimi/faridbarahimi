@@ -11,7 +11,7 @@
 [![AICP](https://img.shields.io/badge/AICP-AI%20Worker%20Control%20Plane-6366f1?style=for-the-badge)](https://github.com/faridbarahimi)
 [![AI Workers](https://img.shields.io/badge/AI-Workers-06b6d4?style=for-the-badge)](https://github.com/faridbarahimi)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Collaborative-8b5cf6?style=for-the-badge)](https://github.com/faridbarahimi/faridbarahimi)
-[![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-GitHub%20Pages-22c55e?style=for-the-badge)](https://faridbarahimi.github.io/faridbarahimi/)
+[![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-GitHub%20Pages-22c55e?style=for-the-badge)](https://faridbarahimi.github.io/)
 
 </div>
 
@@ -227,6 +227,6 @@ AI Agents · Multi-Agent Systems · Work Orchestration · Model Routing · Autom
 
 <br/>
 
-[🌐 Live Dashboard](https://faridbarahimi.github.io/faridbarahimi/) · [🧰 Tools / Kashkool](./tools/) · [📚 Public Docs](./docs/) · [⭐ Star on GitHub](https://github.com/faridbarahimi/faridbarahimi)
+[🌐 Live Dashboard](https://faridbarahimi.github.io/) · [🧰 Tools / Kashkool](./tools/) · [📚 Public Docs](./docs/) · [⭐ Star on GitHub](https://github.com/faridbarahimi/faridbarahimi)
 
 </div>
