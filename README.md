@@ -6,6 +6,8 @@
 
 ### Building the control plane for AI workers.
 
+[GitHub](https://github.com/faridbarahimi) · [AICP Core](https://github.com/faridbarahimi/AICP-Core-Platform) · [Website](https://faridbarahimi.github.io/) · [WhatsApp](https://wa.me/989022232485)
+
 **Plan · Execute · Verify · Recover**
 
 [![AICP](https://img.shields.io/badge/AICP-AI%20Worker%20Control%20Plane-6366f1?style=for-the-badge)](https://github.com/faridbarahimi)
